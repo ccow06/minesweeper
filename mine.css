@@ -1,0 +1,131 @@
+table {
+  border-collapse: collapse;
+}
+
+tr {
+}
+
+td {
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  padding: 0px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 24px;
+}
+
+.col2,.col3,.col4,.col5,.col6,.col7,.col8,.col9,.col10 {
+  border-left: 2px solid black;
+}
+.col1,.col2,.col3,.col4,.col5,.col6,.col7,.col8,.col9, {
+  border-right: 2px solid black;
+}
+
+#row1,#row2,#row3,#row4,#row5,#row6,#row7,#row8,#row9 {
+  border-bottom: 2px solid black;
+}
+
+#row2,#row3,#row4,#row5,#row6,#row7,#row8,#row9,#row10 {
+  border-top: 2px solid black;
+}
+
+#container {
+  border: 10px solid black;
+  border-top-color: ;
+  border-bottom-color: ;
+  border-left-color: ;
+  border-right-color: ;
+  max-width: 518px;
+}
+
+.insider {
+  border: 5px solid;
+  border-left-color: #CCCCCC;
+  border-right-color: #777777;
+  border-bottom-color: #777777;
+  border-top-color: #CCCCCC;
+  background-color: #EEEEEE;
+  width: 80%;
+  height: 80%;
+}
+
+.insider:active {
+  border-right-color: #CCCCCC;
+  border-left-color: #777777;
+  border-top-color: #777777;
+  border-bottom-color: #CCCCCC;
+  background-color: #999999;
+}
+
+.flagged .insider {
+  background-color: red;
+  border-top-color: #DD5555;
+  border-bottom-color: #AA3333;
+  border-right-color: #AA3333;
+  border-left-color: #DD5555;
+}
+
+.cleared .insider { /* For tiles that were flagged and were mines at the end */
+  background-color: lime;
+  border-top-color: #55DD55;
+  border-bottom-color: #33AA33;
+  border-right-color: #33AA33;
+  border-left-color: #55DD55;
+}
+
+.Tcleared .insider {
+  background-color: #55DD55;
+  border-top-color: #22AA22;
+  border-bottom-color: #008800;
+  border-right-color: #008800;
+  border-left-color: #22AA22;
+}
+
+.wrong .insider { /* For tiles that are flagged but not mines at the end */
+  border-left-color: #606060;
+  border-right-color: #050505;
+  border-bottom-color: #050505;
+  border-top-color: #606060;
+  background-color: #828282;
+
+}
+
+.a1 {
+  color: blue;
+}
+
+.a2 {
+  color: #DD33DD;
+}
+
+.a3 {
+  color: red;
+}
+
+.a4 {
+  color: orange;
+}
+
+.a5 {
+  color: yellow;
+}
+
+.a6 {
+  color: green;
+}
+
+.a7 {
+  color: pink;
+}
+
+.a8 {
+  color: brown;
+}
+
+.mine {
+  color: black;
+  font-weight: bolder;
+  font-size: 36px;
+  background-image: radial-gradient(yellow, orange, crimson);
+}
